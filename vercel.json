@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/send-to-notion.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/send-to-notion",
+      "dest": "api/send-to-notion.js"
+    }
+  ]
+}
